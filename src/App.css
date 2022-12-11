@@ -88,10 +88,35 @@ body {
   min-height: 380px;
 }
 
-span.active .paper-div, .paper-div:hover {
+span.active .paper-div,
+.paper-div:hover {
   background-color: rgb(21 115 207 / 45%) !important;
+}
+
+span.active .paper-div:hover {
+  background-color: rgba(207, 21, 21, 0.45) !important;
 }
 
 .paper-div p {
   max-width: 180px;
+}
+
+.input-c {
+  text-align: center;
+}
+
+.m-t {
+  margin-top: 1.5rem;
+}
+
+.m-b {
+  margin-bottom: 2.0rem;
+}
+
+.m-l {
+  margin-left: 1.5rem;
+}
+
+.m-r {
+  margin-right: 1.5rem;
 }
