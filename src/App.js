@@ -16,9 +16,9 @@ const getDefaultCards = () => {
         card.card_sets.filter(cardset => cardset.set_name == 'Legend of Blue Eyes White Dragon').length > 0
         || card.card_sets.filter(cardset => cardset.set_name == 'Starter Deck: Kaiba').length > 0
         || card.card_sets.filter(cardset => cardset.set_name == 'Starter Deck: Yugi').length > 0)
-    ).map((card, index) =>           {
+    ).map((card, index) => {
       return (
-        { ID: card.id, name:          card.name, imgID: card.card_images.sort((a, b) => a.id < b.id ? -1 : 1)[0].id, card_detail: card}
+        { ID: card.id, name: card.name, imgID: card.card_images.sort((a, b) => a.id < b.id ? -1 : 1)[0].id, card_detail: card }
       )
     }).sort((a, b) => a.ID < b.ID ? -1 : 1);
   return [...list];
@@ -214,7 +214,7 @@ function CardSelect(props) {
         <img src={`/images/${card.imgID}.jpg`} width={'180px'}></img>
         <p>{card.name}</p>
       </Paper>
-       </span>
+    </span>
   )
 }
 
